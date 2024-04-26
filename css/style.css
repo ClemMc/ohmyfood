@@ -11,5 +11,5 @@
 
 .main-container {
   width: 100%;
-  min-width: 320px;
+  background-color: var(--main-color);
 }/*# sourceMappingURL=style.css.map */
