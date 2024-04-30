@@ -1,3 +1,8 @@
+* {
+  font-family: "roboto", sans-serif;
+  margin: 0px;
+}
+
 body {
   margin-top: 0;
 }
@@ -12,12 +17,8 @@ body {
 .main-container {
   width: 100%;
   max-width: 1440px;
-  background-color: var(--main-color);
-  margin-left: 0;
-}
-
-header {
   background-color: #fff;
+  margin-left: 0;
 }
 
 .logo {
@@ -41,7 +42,6 @@ header {
 }
 
 .location {
-  font-family: "Roboto";
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -53,48 +53,87 @@ header {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-main {
-  font-family: "Roboto";
-}
-
-.firstsection {
-  font-family: "Roboto";
-  font-style: normal;
+.intro {
   text-align: center;
+  background-color: var(--main-color);
+  padding: 0px 10px 70px;
 }
-
-h1 {
-  font-weight: 700;
+.intro h1 {
+  font-weight: 900;
   font-size: 24px;
-  line-height: 28px;
+  padding: 40px 0px 10px;
+  max-width: 250px;
+  margin: auto;
 }
-
-.subtitle {
-  font-weight: 300;
+.intro p {
+  font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  padding-bottom: 40px;
 }
 
 .btn {
   width: 218px;
-  height: 50px;
-  background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+  padding: 15px 0px;
+  background: linear-gradient(var(--secondary-color), var(--primary-color));
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   font-weight: bold;
   color: white;
 }
-
-.functionality {
-  background-color: #fff;
-  padding-bottom: 5px;
+.btn:hover {
+  background: linear-gradient(var(--secondary-color), var(--secondary-color), var(--primary-color));
+  transition: 0.2s;
+  cursor: pointer;
 }
 
-.rectangle {
-  width: 85%;
-  height: 72.38px;
-  background: var(--main-color);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+.main-titles {
+  font-weight: 900;
+  font-size: 24px;
+  padding: 50px 0px 20px;
+}
+
+aside {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+aside .bloc-guide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+aside .bloc-guide .guide {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 260px;
+  max-width: 310px;
+  background-color: var(--main-color);
+  padding: 25px 0px;
   border-radius: 20px;
-  margin: 20px;
+  margin: 5px 0px 20px 10px;
+  box-shadow: 0px 3px 15px -10px;
+  cursor: pointer;
+}
+aside .bloc-guide .guide span,
+aside .bloc-guide .guide h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+aside .bloc-guide .guide .round {
+  color: white;
+  padding: 3px 8px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 15px 0px -10px;
+}
+aside .bloc-guide .guide i {
+  color: gray;
+  padding-right: 20px;
+}
+aside .bloc-guide .guide:hover i {
+  color: #9356dc;
 }/*# sourceMappingURL=style.css.map */
