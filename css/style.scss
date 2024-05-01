@@ -13,7 +13,6 @@ body {
 }
 .main-container {
     width: 100%;
-    max-width: 1440px;
     background-color: #fff;
     margin-left: 0;
 }
@@ -137,8 +136,33 @@ aside {
         }
       }
     }
-  }
+} 
 
-#restaurants {
+article {
     background-color: var(--main-color);
+    h2 {
+        width: 90%;
+        margin: auto;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+        .restaurants {
+            border-radius: 20px;
+            background-color: #fff;
+            a {
+                text-decoration: none;
+                color: #000;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+            
+                }    
+            }
+        }
+    }    
 }

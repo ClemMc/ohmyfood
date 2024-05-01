@@ -16,7 +16,6 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 1440px;
   background-color: #fff;
   margin-left: 0;
 }
@@ -145,6 +144,31 @@ aside .bloc-guide .guide:hover i {
   color: #9356dc;
 }
 
-#restaurants {
+article {
   background-color: var(--main-color);
+}
+article h2 {
+  width: 90%;
+  margin: auto;
+}
+article div {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+}
+article div .restaurants {
+  border-radius: 20px;
+  background-color: #fff;
+}
+article div .restaurants a {
+  text-decoration: none;
+  color: #000;
+}
+article div .restaurants a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
