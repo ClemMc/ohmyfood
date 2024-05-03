@@ -58,7 +58,7 @@ body {
   padding: 0px 10px 70px;
 }
 .intro h1 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 24px;
   padding: 40px 0px 10px;
   max-width: 250px;
@@ -107,7 +107,7 @@ aside .bloc-guide {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 1px;
 }
 aside .bloc-guide .guide {
   display: flex;
