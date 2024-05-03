@@ -146,6 +146,7 @@ aside .bloc-guide .guide:hover i {
 
 article {
   background-color: var(--main-color);
+  padding-bottom: 65px;
 }
 article h2 {
   width: 90%;
@@ -171,4 +172,48 @@ article div .restaurants a img {
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+article div .restaurants a span {
+  font-size: 10px;
+  color: #008766;
+  background-color: var(--tertiary-color);
+  padding: 5px;
+  border-radius: 2px;
+  position: absolute;
+  right: 8%;
+}
+article div .restaurants a h3 {
+  padding-left: 15px;
+}
+article div .restaurants a p {
+  padding-left: 15px;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding-bottom: 40px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  padding: 22px 25px;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+footer div ul {
+  list-style-type: none;
+}
+footer div ul a {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  gap: 15px;
+  text-decoration: none;
+}
+footer div ul a:hover {
+  color: var(--secondary-color);
 }/*# sourceMappingURL=style.css.map */
