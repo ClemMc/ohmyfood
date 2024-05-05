@@ -137,7 +137,7 @@ aside {
     }
 } 
 
-article {
+#restaurants {
     background-color: var(--main-color);
     padding-bottom: 65px;
     h2 {
@@ -162,8 +162,13 @@ article {
                     border-top-right-radius: 20px;
             
                 }  
+                .center-image {
+                    object-position: left 60%;
+                }
+                /* Nouveau*/
                 span {
-                    font-size: 10px;
+                    font-size: 15px;
+                    font-weight: 500;
                     color: #008766;
                     background-color: var(--tertiary-color);
                     padding: 5px;

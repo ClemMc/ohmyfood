@@ -81,8 +81,6 @@ body {
   border: none;
   border-radius: 30px;
   text-decoration: none;
-}
-.btn span {
   font-weight: 500;
   color: white;
   font-size: 16px;
@@ -145,37 +143,43 @@ aside .bloc-guide .guide:hover i {
   color: #9356dc;
 }
 
-article {
+#restaurants {
   background-color: var(--main-color);
   padding-bottom: 65px;
 }
-article h2 {
+#restaurants h2 {
   width: 90%;
   margin: auto;
 }
-article div {
+#restaurants div {
   display: flex;
   flex-direction: column;
   padding: 15px;
   gap: 20px;
 }
-article div .restaurants {
+#restaurants div .restaurants {
   border-radius: 20px;
   background-color: #fff;
 }
-article div .restaurants a {
+#restaurants div .restaurants a {
   text-decoration: none;
   color: #000;
+  /* Nouveau*/
 }
-article div .restaurants a img {
+#restaurants div .restaurants a img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-article div .restaurants a span {
-  font-size: 10px;
+#restaurants div .restaurants a .center-image {
+  -o-object-position: left 60%;
+     object-position: left 60%;
+}
+#restaurants div .restaurants a span {
+  font-size: 15px;
+  font-weight: 500;
   color: #008766;
   background-color: var(--tertiary-color);
   padding: 5px;
@@ -183,10 +187,10 @@ article div .restaurants a span {
   position: absolute;
   right: 8%;
 }
-article div .restaurants a h3 {
+#restaurants div .restaurants a h3 {
   padding-left: 15px;
 }
-article div .restaurants a p {
+#restaurants div .restaurants a p {
   padding-left: 15px;
 }
 
