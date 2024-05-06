@@ -91,7 +91,7 @@ body {
   cursor: pointer;
 }
 
-.main-titles {
+.main-title {
   font-weight: 900;
   font-size: 24px;
   padding: 50px 0px 20px;
@@ -143,41 +143,41 @@ aside .bloc-guide .guide:hover i {
   color: #9356dc;
 }
 
-#restaurants {
+#restaurant {
   background-color: var(--main-color);
   padding-bottom: 65px;
 }
-#restaurants h2 {
+#restaurant h2 {
   width: 90%;
   margin: auto;
 }
-#restaurants div {
+#restaurant div {
   display: flex;
   flex-direction: column;
   padding: 15px;
   gap: 20px;
 }
-#restaurants div .restaurants {
+#restaurant div .restaurant {
   border-radius: 20px;
   background-color: #fff;
 }
-#restaurants div .restaurants a {
+#restaurant div .restaurant a {
   text-decoration: none;
   color: #000;
   /* Nouveau*/
 }
-#restaurants div .restaurants a img {
+#restaurant div .restaurant a img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-#restaurants div .restaurants a .center-image {
+#restaurant div .restaurant a .center-image {
   -o-object-position: left 60%;
      object-position: left 60%;
 }
-#restaurants div .restaurants a span {
+#restaurant div .restaurant a span {
   font-size: 15px;
   font-weight: 500;
   color: #008766;
@@ -187,11 +187,17 @@ aside .bloc-guide .guide:hover i {
   position: absolute;
   right: 8%;
 }
-#restaurants div .restaurants a h3 {
+#restaurant div .restaurant a h3 {
   padding-left: 15px;
 }
-#restaurants div .restaurants a p {
+#restaurant div .restaurant a p {
   padding-left: 15px;
+}
+
+.heart {
+  position: absolute;
+  right: 8%;
+  bottom: -37%;
 }
 
 footer {
