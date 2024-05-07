@@ -53,4 +53,9 @@
 }
 #restaurant div .restaurant a p {
   padding-left: 15px;
+}
+#restaurant div .restaurant .fa-heart {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }/*# sourceMappingURL=resto.css.map */
