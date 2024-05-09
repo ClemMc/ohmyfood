@@ -89,7 +89,7 @@ body {
 #heart2:checked ~ label,
 #heart3:checked ~ label,
 #heart4:checked ~ label {
-  color: #9356dc;
+  color: var(--primary-color);
 }
 #heart:checked ~ label .heart-full,
 #heart1:checked ~ label .heart-full,
@@ -118,5 +118,4 @@ body {
 #heart3,
 #heart4 {
   display: none;
-  margin-left: -24px;
 }/*# sourceMappingURL=style.css.map */

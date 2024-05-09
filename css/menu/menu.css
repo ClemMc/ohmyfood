@@ -14,4 +14,28 @@
   padding-bottom: 80px;
   border-radius: 40px 40px 0px 0px;
   background-color: var(--main-color);
+}
+.menu .bloc-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: 90%;
+  margin: auto;
+}
+.menu .bloc-menu .title-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: -15px;
+  width: 100%;
+}
+.menu .bloc-menu .title-menu h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+}
+.menu .bloc-menu .title-menu .fa-heart {
+  position: absolute;
+  right: 5%;
 }/*# sourceMappingURL=menu.css.map */
