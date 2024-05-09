@@ -38,4 +38,39 @@
 .menu .bloc-menu .title-menu .fa-heart {
   position: absolute;
   right: 5%;
+}
+
+.card h2 {
+  font-weight: 400;
+  font-size: 16px;
+  border-bottom: 3.5px solid var(--tertiary-color);
+  width: 40px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.card article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px;
+  border-radius: 15px;
+  margin: 5px 0px 20px 10px;
+  box-shadow: 0px 4px 15px -10px;
+}
+.card article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+  margin: 15px;
+}
+.card article span {
+  padding: 0px;
+  margin: 15px;
+  font-weight: 700;
 }/*# sourceMappingURL=menu.css.map */
