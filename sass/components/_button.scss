@@ -1,0 +1,21 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 218px;
+    padding: 15px 0px;
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
+    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    &:hover {
+        background: linear-gradient(var(--secondary-color), var(--secondary-color), var(--primary-color));
+        transition: 0.2s;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.35);
+        cursor: pointer;
+    }
+}
