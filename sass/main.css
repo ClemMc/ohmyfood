@@ -182,7 +182,6 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fill 0.7s;
-  animation: empty 0.7s forwards;
 }
 @keyframes fill {
   0% {
