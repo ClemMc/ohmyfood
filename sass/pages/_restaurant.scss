@@ -25,7 +25,6 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 30px;
-        margin-bottom: -15px;
         width: 100%;
         h1 {
           font-family: "Shrikhand", sans-serif;
@@ -71,7 +70,6 @@
             overflow: hidden;
             text-overflow: clip;
             text-overflow: ellipsis;
-            text-overflow: "…";
         }
         span {
             padding: 0px;
@@ -87,6 +85,15 @@
   .menu {
     margin-left: 150px;
     margin-right: 150px;
+    .bloc-menu {
+        .title-menu {
+          justify-content: center;
+        .fa-heart {
+          position: absolute;
+          right: 40%;
+        }
+      }
+    }
   }
   .card {
     margin-left: 150px;
