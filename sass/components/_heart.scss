@@ -18,6 +18,16 @@
       background: linear-gradient(var(--primary-color), var(--secondary-color));
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: fill 0.7s;
+    }
+    @keyframes fill {
+      0% {
+        opacity: 0%;
+      }
+      100% {
+        opacity: 100%;
+      }
+      
     }
   }
 }

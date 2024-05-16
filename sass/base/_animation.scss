@@ -1,0 +1,24 @@
+@keyframes appear {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+.entree {
+    opacity: 0%;
+    animation: appear 0.5s none 0.75s;
+    animation-fill-mode: forwards;
+  }
+  .plat {
+    opacity: 0%;
+    animation: appear 0.75s none 1.5s;
+    animation-fill-mode: forwards;
+  }
+  .dessert {
+    opacity: 0%;
+    animation: appear 0.75s none 2.25s;
+    animation-fill-mode: forwards;
+  }

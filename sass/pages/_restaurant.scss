@@ -67,6 +67,11 @@
             padding: 0px;
             gap: 5px;
             margin: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+            text-overflow: ellipsis;
+            text-overflow: "…";
         }
         span {
             padding: 0px;
@@ -74,4 +79,17 @@
             font-weight: 700;
         }
     } 
+}
+
+/****** Media queries ***********/
+/* Medium devices and desktop (768px) */
+@media (min-width: 768px) {
+  .menu {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .card {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 }

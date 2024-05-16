@@ -12,9 +12,10 @@
     font-weight: 500;
     color: white;
     font-size: 16px;
+    transition: 0.3s;
     &:hover {
         background: linear-gradient(var(--secondary-color), var(--secondary-color), var(--primary-color));
-        transition: 0.2s;
+        transition: 0.3s;
         box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.35);
         cursor: pointer;
     }

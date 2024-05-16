@@ -17,7 +17,6 @@
       font-weight: 700;
       font-size: 24px;
       padding: 40px 0px 10px;
-      max-width: 250px;
       margin: auto;
     }
     p {
@@ -31,4 +30,15 @@
     font-weight: 900;
     font-size: 24px;
     padding: 50px 0px 20px;
+}
+
+/****** Media queries ***********/
+/* Medium devices and desktop (768px) */
+@media (min-width: 768px) {
+  .intro {
+    h1 {
+      font-size: 40px;
+      line-height: 47px;
+    }
+  }
 }
