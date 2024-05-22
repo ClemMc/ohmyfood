@@ -420,7 +420,7 @@ footer div ul a:hover {
   right: 5%;
 }
 
-.card h2 {
+.order h2 {
   font-weight: 400;
   font-size: 16px;
   border-bottom: 3.5px solid var(--tertiary-color);
@@ -428,11 +428,7 @@ footer div ul a:hover {
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
-.card article {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+.order .menu-card {
   width: 100%;
   background-color: #fff;
   padding: 0px;
@@ -440,7 +436,7 @@ footer div ul a:hover {
   margin: 5px 0px 20px 0px;
   box-shadow: 0px 4px 15px -10px;
 }
-.card article div {
+.order .menu-card .menu-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -450,31 +446,88 @@ footer div ul a:hover {
   margin: 15px;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: clip;
   text-overflow: ellipsis;
 }
-.card article span {
-  padding: 0px;
-  margin: 15px;
-  font-weight: 700;
+
+.menu-item {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+.menu-item .item-price {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.container-check {
+  display: flex;
+  margin-left: auto;
+  transform: translateX(60px);
+  transition: all 0.5s ease;
+}
+
+.menu-card:hover .container-check {
+  transform: translateX(0);
+}
+
+.menu-card:hover .menu-description > * {
+  width: calc(100% - 60px);
+}
+
+.item-check {
+  background: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container-check .fa-solid {
+  background-color: white;
+  border-radius: 50%;
+  color: #99e2d0;
+  padding: 2px;
+}
+
+.menu-container section {
+  animation: apparition 1s ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateX(-800px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 /****** Media queries ***********/
 /* Medium devices and desktop (768px) */
 @media (min-width: 768px) {
   .menu {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .menu .bloc-menu .title-menu {
     justify-content: center;
   }
   .menu .bloc-menu .title-menu .fa-heart {
     position: absolute;
-    right: 40%;
+    right: auto;
   }
-  .card {
-    margin-left: 150px;
-    margin-right: 150px;
+  .order {
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }/*# sourceMappingURL=main.css.map */
