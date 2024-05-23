@@ -1,41 +1,39 @@
+
+
+.heart-container {
+  display: flex;
+
+}
+
 .fa-heart {
   cursor: pointer;
-  &:hover {
-      color: var(--primary-color);
-  }
+  transition: color 2s;
 }
-#heart:checked ~ label,
-#heart1:checked ~ label,
-#heart2:checked ~ label,
-#heart3:checked ~ label,
-#heart4:checked ~ label {
-color: var(--primary-color);
+
 .heart-full {
-  display: inline;
-  &::before {
-    display: inline;
-    position: relative;
-    background: linear-gradient(var(--primary-color), var(--secondary-color));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: fill 0.7s;
-  }
-  @keyframes fill {
-    0% {
-      opacity: 0%;
-    }
-    100% {
-      opacity: 100%;
-    }
-  }
+  display: none;
+  color: transparent;
 }
+
+.fa-heart:hover {
+  color: var(--primary-color);
 }
-.heart-full,
-.heart-full::before,
-#heart,
-#heart1,
-#heart2,
-#heart3,
-#heart4 {
-display: none;
+
+.fa-heart:hover::before {
+  content: '\f004';
+  color: transparent;
+  color: var(--primary-color);
+  animation: fill 2s forwards;
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
