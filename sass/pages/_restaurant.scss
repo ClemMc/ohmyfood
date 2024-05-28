@@ -54,17 +54,21 @@
       border-radius: 15px;
       margin: 5px 0px 20px 0px;
       box-shadow: 0px 4px 15px -10px;
+      cursor: pointer;
       .menu-description {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: flex-start;
           padding: 0px;
           gap: 5px;
           margin: 15px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          h3, p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
       }
   } 
 }
@@ -72,6 +76,8 @@
 display: flex;
 overflow: hidden;
 text-overflow: ellipsis;
+justify-content: flex-start;
+position: relative;
 }
 
 .menu-item .item-price {
@@ -81,8 +87,9 @@ font-weight: 900;
 font-size: 15px;
 margin-left: auto;
 display: flex;
-align-items: center;
+align-items: flex-end;
 margin-right: 5px;
+margin-bottom: 15px;
 }
 
 .container-check {
@@ -92,13 +99,10 @@ transform: translateX(60px);
 transition: all 0.5s ease;
 }
 
-.menu-card:hover .container-check {
+.menu-item:hover .container-check {
 transform: translateX(0);
 }
 
-.menu-card:hover .menu-description > * {
-width: calc(100% - 60px);
-}
 
 .item-check {
 background: #99e2d0;
@@ -113,7 +117,8 @@ padding: 20px;
 background-color: white;
 border-radius: 50%;
 color: #99e2d0;
-padding: 2px;
+padding: 5px;
+font-size: 10px;
 }
 
 .menu-container section {
@@ -153,4 +158,5 @@ to {
   margin-left: 20%;
   margin-right: 20%;
 }
+
 }

@@ -87,6 +87,11 @@
             row-gap: 50px;
             column-gap: 100px;
             padding: 0;
+            .restaurant {
+                .fa-heart {
+                    bottom: 20px;
+                }
+            }
         }
     }    
 }

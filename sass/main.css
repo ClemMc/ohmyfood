@@ -178,43 +178,38 @@
     column-gap: 100px;
     padding: 0;
   }
+  #restaurant div .restaurant .fa-heart {
+    bottom: 20px;
+  }
 }
-.heart-container {
+.title-heart {
   display: flex;
+  align-items: center;
+  position: relative;
 }
-
-.fa-heart {
-  cursor: pointer;
-  transition: color 2s;
-}
-
-.heart-full {
-  display: none;
+.title-heart .fa-full {
+  position: absolute;
+  font-size: 25px;
+  right: 10px;
   color: transparent;
-}
-
-.fa-heart:hover {
-  color: var(--primary-color);
-}
-
-.fa-heart:hover::before {
-  content: "\f004";
-  color: transparent;
-  color: var(--primary-color);
-  animation: fill 2s forwards;
-  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  background: linear-gradient(var(--secondary-color), var(--primary-color));
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 2s ease;
+}
+.title-heart:active .fa-solid {
+  opacity: 1;
+}
+.title-heart:hover .fa-solid {
+  opacity: 1;
+}
+.title-heart .fa-empty {
+  position: absolute;
+  font-size: 25px;
+  right: 10px;
 }
 
-@keyframes fill {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 aside {
   width: 90%;
   margin: auto;
@@ -448,16 +443,20 @@ footer div ul a:hover {
   border-radius: 15px;
   margin: 5px 0px 20px 0px;
   box-shadow: 0px 4px 15px -10px;
+  cursor: pointer;
 }
 .order .menu-card .menu-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   padding: 0px;
   gap: 5px;
   margin: 15px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.order .menu-card .menu-description h3, .order .menu-card .menu-description p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -466,6 +465,8 @@ footer div ul a:hover {
   display: flex;
   overflow: hidden;
   text-overflow: ellipsis;
+  justify-content: flex-start;
+  position: relative;
 }
 
 .menu-item .item-price {
@@ -475,8 +476,9 @@ footer div ul a:hover {
   font-size: 15px;
   margin-left: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-right: 5px;
+  margin-bottom: 15px;
 }
 
 .container-check {
@@ -486,12 +488,8 @@ footer div ul a:hover {
   transition: all 0.5s ease;
 }
 
-.menu-card:hover .container-check {
+.menu-item:hover .container-check {
   transform: translateX(0);
-}
-
-.menu-card:hover .menu-description > * {
-  width: calc(100% - 60px);
 }
 
 .item-check {
@@ -507,7 +505,8 @@ footer div ul a:hover {
   background-color: white;
   border-radius: 50%;
   color: #99e2d0;
-  padding: 2px;
+  padding: 5px;
+  font-size: 10px;
 }
 
 .menu-container section {
