@@ -1,6 +1,7 @@
 * {
     font-family: "roboto", sans-serif;
     margin: 0px;
+    box-sizing: border-box;
   }
   :root {
     --main-color: #F3F3F3;
@@ -8,3 +9,7 @@
     --secondary-color: #FF79DA;
     --tertiary-color: #99E2D0;
 }
+body {
+  width: auto;
+}
+

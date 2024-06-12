@@ -10,9 +10,7 @@ aside {
       .guide {
         display: flex;
         align-items: center;
-        width: 100%;
-        min-width: 260px;
-        max-width: 310px;
+        width: 98%;
         background-color: var(--main-color);
         padding: 25px 0px;
         border-radius: 20px;
@@ -45,3 +43,23 @@ aside {
       }
     }
 } 
+
+/****** Media queries ***********/
+/* Medium devices and desktop (768px) */
+@media (min-width: 768px) {
+  aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 180px;
+    gap: 25px;
+    .bloc-guide {
+      width: 98%;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: nowrap;
+    }
+  }
+}

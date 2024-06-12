@@ -69,11 +69,13 @@
       width: 99%;
       overflow: hidden;
       white-space: nowrap;
+      text-overflow: ellipsis;
   }
   .card-description {
     width: 99%;
     overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 15.04px;
     font-weight: 300;
     line-height: 17.63px;

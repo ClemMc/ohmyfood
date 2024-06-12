@@ -56,6 +56,7 @@
 * {
   font-family: "roboto", sans-serif;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 :root {
@@ -63,6 +64,10 @@
   --primary-color: #9356DC;
   --secondary-color: #FF79DA;
   --tertiary-color: #99E2D0;
+}
+
+body {
+  width: auto;
 }
 
 .btn {
@@ -104,8 +109,7 @@
   gap: 20px;
 }
 #restaurant div .restaurant {
-  width: 100%;
-  max-width: 490px;
+  width: 98%;
   border-radius: 15px;
   background-color: white;
   position: relative;
@@ -199,9 +203,6 @@
   opacity: 0;
   transition: all 2s ease;
 }
-.title-heart:active .fa-solid {
-  opacity: 1;
-}
 .title-heart:hover .fa-solid {
   opacity: 1;
 }
@@ -225,9 +226,7 @@ aside .bloc-guide {
 aside .bloc-guide .guide {
   display: flex;
   align-items: center;
-  width: 100%;
-  min-width: 260px;
-  max-width: 310px;
+  width: 98%;
   background-color: var(--main-color);
   padding: 25px 0px;
   border-radius: 20px;
@@ -257,6 +256,25 @@ aside .bloc-guide .guide:hover i {
   color: #9356dc;
 }
 
+/****** Media queries ***********/
+/* Medium devices and desktop (768px) */
+@media (min-width: 768px) {
+  aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 180px;
+    gap: 25px;
+  }
+  aside .bloc-guide {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+}
 footer {
   background-color: #353535;
   color: #fff;
@@ -454,11 +472,13 @@ footer div ul a:hover {
   width: 99%;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card-container .card-description {
   width: 99%;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 15.04px;
   font-weight: 300;
   line-height: 17.63px;
